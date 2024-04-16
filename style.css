@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+#app > * {
+    border: 1px solid red;
+}
+
+#app {
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr); */
+    grid-template: 
+    "A B B" 80px
+    "A B B" 40px
+    "A C D" 50px / 80px 1fr 2fr;
+    gap: 30px;
+    height: 50vw;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#app header {
+    /* grid-row-start: 1;
+    grid-row-end: 4; */
+    grid-area: A;
+}
+
+#app main {
+   grid-area: B;
+}
+

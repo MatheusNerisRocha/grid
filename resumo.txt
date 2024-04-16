@@ -1,0 +1,57 @@
+TODO GRID TERA UM PAI E UM FILHO (CONTAINER / ITENS)
+O PAI RECEBE O DISPLAY GRID
+---------------------------------------------------------
+### CONTAINER (PAI)
+
+- display: grid;
+- grid-template;
+    -grid-template-columns;
+    [grid-template-columns: repeat(3, 1fr);]
+    -grid-template-rows;
+    -grid-template-areas;
+- gap;
+    -row-gap;
+    -column-gap;
+---------------------------------------------------------
+### ITENS (FILHO)
+- grid-column;
+    -grid-column-start;
+    -grid-column-end;
+-grid-row;
+    -grid-row-start;
+    -grid-row-end;
+-grid-area;
+----------------------------------------------------------
+### PROPRIEDADES DE ALINHAMENTO
+
+Existem 9 propriedades fundamentais
+
+**6 aplicadas em container**
+
+`align-content`
+`justift-content`
+`place-content`
+
+`align-items`
+`justify-items`
+`place-items`
+
+**3 aplicadas em items**
+
+`align-self`
+`justify-self
+`place-self`
+
+Então podemos separar em 3 grupos:
+`align`, `justify`, `place`
+
+E cada um deles irá observar ou o 
+- conteudo do elemento `content`
+- itens do elemento `items`
+- o próprio elemento `self`
+-----------------------------------------------------------
+### PROPRIEDADES AUTO
+
+- grid-auto-flow
+- grid-auto-rows
+- grid-auto-columns
